@@ -1,0 +1,43 @@
+<div>
+    <webcam [height]="500" [width]="500" [trigger]="triggerObservable" (imageCapture)="handleImage($event)"
+        *ngIf="showWebcam" [allowCameraSwitch]="allowCameraSwitch" [switchCamera]="nextWebcamObservable"
+        [videoOptions]="videoOptions" [imageQuality]="1" (cameraSwitched)="cameraWasSwitched($event)"
+        (initError)="handleInitError($event)"></webcam>
+    <br />
+    <button (click)="triggerSnapshot();">Capture</button>
+    <!-- <button (click)="toggleWebcam();">Toggle Webcam</button> -->
+    <br />
+    <div>
+        <!-- <button (click)="showNextWebcam(true);" [disabled]="!multipleWebcamsAvailable">Next
+            Webcam</button> -->
+        <div *ngIf="webcamImage">
+            <img [src]="webcamImage.imageAsDataUrl" />
+        </div>
+    </div>
+    <!-- ?? to inclde busstop code  -->
+    <div> <button (click)="getbusses(18121);">Get Bus</button></div>
+    <div>
+        <mat-accordion>
+            <mat-expansion-panel class="panel_body" *ngFor="let bus of bus_list">
+                <!-- ?? to inclde busstop code  -->
+                <mat-expansion-panel-header (click)="gettimimng(18121,bus)"> 
+                    <mat-panel-title>
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        Bus {{bus}}
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+
+                <mat-list>
+                    <mat-list-item *ngFor="let bustiming of timing_list">
+                        <h4 mat-line>{{bustiming.estimatedArrival}}</h4>
+                        <h4 mat-line>{{bustiming.seats_available}}</h4>
+                        <h4 mat-line>{{bustiming.type}}</h4>
+                        <img src={{bustiming.type_img}} height="60%" />
+                        <mat-divider></mat-divider>
+                    </mat-list-item>
+                </mat-list>
+
+            </mat-expansion-panel>
+        </mat-accordion>
+    </div>

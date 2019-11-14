@@ -1,0 +1,46 @@
+
+  #btn_locate{
+    background-color: rgb(255, 255, 255);
+    color: #21ba45;
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+}
+
+
+#btn_cam{
+  background-color :rgb(255, 255, 255);
+  color:rgb(184, 32, 32);
+  position: fixed;
+  bottom: 3%;
+  left: 3%;
+}
+
+.panel_header{
+  background-color:  #f1f9ff;
+  box-shadow: 0 1px 2px 0 rgba(34,36,38,.15);
+  font-size: 120%;
+  height: 150%;
+}
+.panel_body{
+  background-color:  rgb(104, 101, 101);
+}
+.mat-chip{
+  font-size: 120%;
+  height: 120%;
+  border: 1px solid rgba(34,36,38,.15) ;
+  background: #ffffff;
+  color: #ff3131 !important;
+
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+}
+.mat-chip:hover {
+  color: #6d6b6d !important;
+  font-weight: 800 !important;
+  letter-spacing: 3px;
+  background: none;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.3s ease 0s;
+  }

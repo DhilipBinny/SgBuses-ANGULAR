@@ -1,0 +1,11 @@
+// npm install --save @angular/material @angular/cdk @angular/animations @angular/flex-layout 
+
+// npm install -g json-server
+
+//ng g c componnets/democomponent --flat --module app.module
+
+//ng serve --proxy-config proxy_conf.js
+
+//ng build --prod
+
+//ng add @angular/pwa

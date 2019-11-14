@@ -1,0 +1,122 @@
+{
+  "configVersion": 1,
+  "timestamp": 1573440710896,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/favicon.ico",
+        "/index.html",
+        "/main-es2015.a3ddac5428da23578bb6.js",
+        "/main-es5.a3ddac5428da23578bb6.js",
+        "/manifest.webmanifest",
+        "/polyfills-es2015.fd917e7c3ed57f282ee5.js",
+        "/polyfills-es5.3aa54d3e5134f5b5b842.js",
+        "/runtime-es2015.24b02acc1f369d9b9f37.js",
+        "/runtime-es5.24b02acc1f369d9b9f37.js",
+        "/styles.9b4c418deee7dab5164f.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/assets/1.png",
+        "/assets/11.png",
+        "/assets/1_.png",
+        "/assets/2.png",
+        "/assets/22.png",
+        "/assets/24px.svg",
+        "/assets/3.png",
+        "/assets/3_.png",
+        "/assets/bus-icon.png",
+        "/assets/camera.png",
+        "/assets/camera.svg",
+        "/assets/crowd.png",
+        "/assets/dailybooth-logo.svg",
+        "/assets/icons/close-24px.svg",
+        "/assets/icons/close-window.png",
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/icons/icons8-close-window-48.png",
+        "/assets/icons8-camera.svg",
+        "/assets/sit.png",
+        "/assets/sit2.png",
+        "/assets/stand.png",
+        "/assets/stand2.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/assets/1.png": "796e061790eaa26e35ef34e3d77bb982e07d6eb8",
+    "/assets/11.png": "796e061790eaa26e35ef34e3d77bb982e07d6eb8",
+    "/assets/1_.png": "6481b66934065a36df6a2bc4f28251dc7b147a79",
+    "/assets/2.png": "ead85e5adc5cd303f99f76a425f917bf6148688b",
+    "/assets/22.png": "1de0a74acb419ce79844a7263c984546b82f71ae",
+    "/assets/24px.svg": "cb41a959e341661989e3b557f000ab75b7d79452",
+    "/assets/3.png": "e201503162bf788cbe8bf0959fb06ed58abffa9a",
+    "/assets/3_.png": "8bdd494ab4d5420944941156cb8f103d4a074dda",
+    "/assets/bus-icon.png": "dcec35e51fb787c49ef0f57303237a0a8e25c7d9",
+    "/assets/camera.png": "60332e5a0103772468103e07e599cd8ed7c07127",
+    "/assets/camera.svg": "856d522156bdefae1f142a7fe579ae4d7f28d47d",
+    "/assets/crowd.png": "1824b8b419d8e38c2da31b8517881de60bbe20ac",
+    "/assets/dailybooth-logo.svg": "0a1736279bf6be86351c9cb265f47ee914e64dab",
+    "/assets/icons/close-24px.svg": "1af37c1b27947b7d73e99de325566933d19a887c",
+    "/assets/icons/close-window.png": "a6381381f663bc6951641cd40f2aece5561eed37",
+    "/assets/icons/icon-128x128.png": "83f0131798c0d6cb7b4b03304f025b6e48c56014",
+    "/assets/icons/icon-144x144.png": "21d7b00949fae286b3805d167c8f4dc71f9bf53a",
+    "/assets/icons/icon-152x152.png": "c0b2e5a496810e3e86eaff951cc541ee59f7fe99",
+    "/assets/icons/icon-192x192.png": "14df20c30c6a42674b9c7e7828e5325fb203d8dc",
+    "/assets/icons/icon-384x384.png": "c2829f30f5fcf2f3ad861b3410da683937ed55b2",
+    "/assets/icons/icon-512x512.png": "369a0947cf125aad2b46df34543a8561f639cdce",
+    "/assets/icons/icon-72x72.png": "5d6d5a01788f0c7b971859ea2b14bcda39db39a4",
+    "/assets/icons/icon-96x96.png": "6313d7c2b1afe180f0dcf5120fda5601003f2e21",
+    "/assets/icons/icons8-close-window-48.png": "71ce30f25b122b2925074b2c1a1f8fbf46f967e7",
+    "/assets/icons8-camera.svg": "f86ab658ea7fe4e7c5d4bff790fc69cc15e7c99e",
+    "/assets/sit.png": "08fdd2b225fb142146b163f5496b933c2a62829e",
+    "/assets/sit2.png": "ec3c7a13e948a01c123b24b06f1286ba95a18479",
+    "/assets/stand.png": "b4b2a1ed5e35e9c5c9b8cf03f34a7c8733c43e61",
+    "/assets/stand2.png": "5da5520fa3a072bbc10ae223cd0da75109e77422",
+    "/favicon.ico": "dcec35e51fb787c49ef0f57303237a0a8e25c7d9",
+    "/index.html": "9aa54f1d63943ab39f566fbba0d1857d62d7b7f1",
+    "/main-es2015.a3ddac5428da23578bb6.js": "bae88f01d1466dfcb5d6e3eb4d7ecd7a5043eb3f",
+    "/main-es5.a3ddac5428da23578bb6.js": "507828cf25f6851a644da24dab4cfa290ea99c50",
+    "/manifest.webmanifest": "513204edce374980f35fe442cdad0ce0baf3f52c",
+    "/polyfills-es2015.fd917e7c3ed57f282ee5.js": "e2f28c3743afd2899e140ad831df9675c233c02b",
+    "/polyfills-es5.3aa54d3e5134f5b5b842.js": "db091f7ef692a1d3add240459a2ea20c81cd6f19",
+    "/runtime-es2015.24b02acc1f369d9b9f37.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/runtime-es5.24b02acc1f369d9b9f37.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/styles.9b4c418deee7dab5164f.css": "9067050ce5fc5ea3fea8836f2b21989f5f34b9a8"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}

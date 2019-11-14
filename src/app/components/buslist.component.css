@@ -1,0 +1,24 @@
+.mat-chip{
+    font-size: 120%;
+    height: 120%;
+    border: 1px solid rgba(34,36,38,.15) ;
+    background: #ffffff;
+    color: #ff3131 !important;
+  
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+  }
+  .mat-chip:hover {
+    color: #6d6b6d !important;
+    font-weight: 800 !important;
+    letter-spacing: 3px;
+    background: none;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.3s ease 0s;
+    }
+
+
+.mat-list-base .mat-list-item, .mat-list-base .mat-list-option{
+        padding: 2%
+    }

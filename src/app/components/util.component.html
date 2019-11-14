@@ -1,0 +1,50 @@
+<div style="text-align:center">
+    <button id="btn_locate" mat-raised-button (click)='getlocation()'><img src="/assets/24px.svg" />Locate Me</button>
+    <!-- <button id="btn_cam" mat-raised-button (click)='oncameraclick()'><img src="/assets/icons8-camera.svg" />BusStop Code</button> -->
+</div>
+<div style="margin-top:2%">
+    <mat-accordion>
+        <mat-expansion-panel class="panel_header" *ngFor="let item of busstops_list">
+            <mat-expansion-panel-header (click)="getbusses(item.id)">
+                <mat-panel-title>
+                    {{item.id}}
+                </mat-panel-title>
+                <mat-panel-description>
+                    {{item.desc}}
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+
+            <!-- <mat-accordion>
+                <mat-expansion-panel class="panel_body" *ngFor="let bus of bus_list">
+                    <mat-expansion-panel-header (click)="gettimimng(item.id,bus)">
+                        <mat-panel-title>
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            Bus {{bus}}
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+
+                    <mat-list>
+                        <mat-list-item *ngFor="let bustiming of timing_list">
+                            <h4 mat-line>{{bustiming.estimatedArrival}}</h4>
+                            <h4 mat-line>{{bustiming.seats_available}}</h4>
+                            <h4 mat-line>{{bustiming.type}}</h4>
+                            <img src={{bustiming.type_img}} height="60%" />
+                            <mat-divider></mat-divider>
+                        </mat-list-item>
+                    </mat-list>
+
+                </mat-expansion-panel>
+            </mat-accordion> -->
+
+            <!-- <mat-chip-list class="chiplist">
+                <mat-chip *ngFor="let bus of bus_list" (click)="gettimimng(item.id,bus)">
+                    Bus {{bus}}
+                </mat-chip>
+            </mat-chip-list> -->
+
+            <app-buslist [bus_list] ="bus_list" [busstop_code_id]="item.id"></app-buslist>
+
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>

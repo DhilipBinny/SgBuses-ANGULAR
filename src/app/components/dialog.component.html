@@ -1,0 +1,15 @@
+<mat-list>
+    <mat-list-item mat-dialog-content *ngFor="let bustiming of data">
+            <h4 mat-line style="color:#ba2121"><b>{{bustiming.estimatedArrival}}</b></h4>
+            <h4 mat-line>{{bustiming.seats_available}}</h4>
+            <h4 mat-line>{{bustiming.type}}</h4>
+            <img class="listimage" src="{{bustiming.seats_available_}}" height="30px" />
+            <img src="{{bustiming.type_img}}"  height=40%  />
+        <mat-divider></mat-divider>
+    </mat-list-item>
+</mat-list>
+
+<div mat-dialog-actions style=" justify-content: flex-end;">
+    <button mat-button [mat-dialog-close] cdkFocusInitial> <img src="../../assets/icons/icons8-close-window-48.png"
+            style="height:25px" /> </button>
+</div>

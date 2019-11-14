@@ -1,0 +1,7 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/79a05e47-8a89-4888-b543-fbf53ac4290a/resourceGroups/cloud-shell-storage-centralindia/providers/Microsoft.Web/sites/datamall-angular",
+    "appService.deploySubpath": "",
+    "appService.zipIgnorePattern": [
+        ".vscode{,/**}"
+    ]
+}
