@@ -21,15 +21,14 @@ export class BuslistComponent implements OnInit {
   bus_list = [];
   @Input() 
   busstop_code_id ;
-  
   timing_list = [];
 
   imgdict = {
-    "Single Deck":"../../assets/11.png",
-    "Double Deck":"../../assets/22.png",
-    "Bendy":"../../assets/2.png"
+    "Single Deck":"../../assets/bustypes/SD.png",
+    "Double Deck":"../../assets/bustypes/DD.png",
+    "Bendy":"../../assets/bustypes/BD.png"
   }
-
+  
   icondict={
     "Seats Available":"../../assets/sit2.png",
     "Standing Available":"../../assets/stand.png",

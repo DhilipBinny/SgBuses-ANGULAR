@@ -13,7 +13,8 @@ import { UtilcamComponent } from './components/utilcam.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { DialogComponent } from './components/dialog.component';
-import { BuslistComponent } from './components/buslist.component'
+import { BuslistComponent } from './components/buslist.component';
+import { OpencamdialogComponent } from './components/opencamdialog.component'
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { BuslistComponent } from './components/buslist.component'
     UtilComponent,
     UtilcamComponent,
     DialogComponent,
-    BuslistComponent
+    BuslistComponent,
+    OpencamdialogComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,8 @@ import { BuslistComponent } from './components/buslist.component'
   providers: [],
   bootstrap: [AppComponent],
   entryComponents: [
-    DialogComponent
+    DialogComponent,
+    OpencamdialogComponent
   ],
 })
 export class AppModule { }

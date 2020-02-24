@@ -3,7 +3,8 @@ import { Router } from '@angular/router';
 import { ActivatedRoute } from '@angular/router';
 import { UtilService } from '../util.service';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { DialogComponent } from "./dialog.component"
+import { DialogComponent } from "./dialog.component";
+import {OpencamdialogComponent} from "./opencamdialog.component"
 
 
 @Component({
@@ -17,21 +18,27 @@ export class UtilComponent implements OnInit {
     readonly activatedroute: ActivatedRoute, 
     readonly router: Router, 
     public dialog: MatDialog) {
-    this.getlocation()
+    // this.getlocation()
   }
 
+  page1 = true
   currLat = 0;
   currLng = 0;
   busstops_list = [];
   bus_list = [];
   timing_list = []
 
-  imgdict = {
-    "Single Deck":"../../assets/11.png",
-    "Double Deck":"../../assets/22.png",
-    "Bendy":"../../assets/2.png"
-  }
+  busstopcodeformimage ;  
+  imageurl = "https://media-cdn.tripadvisor.com/media/photo-s/13/bd/7e/73/closest-bus-stop-steps.jpg";
 
+    // "Single Deck":"../../assets/11.png",
+    // "Double Deck":"../../assets/22.png",
+    // "Bendy":"../../assets/2.png"
+  imgdict = {
+    "Single Deck":"../../assets/bustypes/SD.png",
+    "Double Deck":"../../assets/bustypes/DD.png",
+    "Bendy":"../../assets/bustypes/BD.png"
+  }
   icondict={
     "Seats Available":"../../assets/sit2.png",
     "Standing Available":"../../assets/stand.png",
@@ -41,6 +48,7 @@ export class UtilComponent implements OnInit {
   }
 
   getlocation() {
+    this.page1=true
     this.service.getPosition().then(pos => {
       this.currLat = pos.lat;
       this.currLng = pos.lng;
@@ -94,6 +102,40 @@ export class UtilComponent implements OnInit {
   }
 
   oncameraclick() {
-    this.router.navigate(['/cam'])
+    this.page1=false
+    this.bus_list = null
+    this.imageurl = "https://media-cdn.tripadvisor.com/media/photo-s/13/bd/7e/73/closest-bus-stop-steps.jpg";
+
+    const dialogRef = this.dialog.open(OpencamdialogComponent, {
+      width: '95%',
+      data: ""
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(result.data)
+      // this.imagefile = result.data.file
+      // console.log(this.imagefile)
+
+      this.imageurl = result.data.imageurl
+      // console.log(this.imageurl)
+      this.service.getprocessedimage(result.data.file).then(r=>{
+        console.log(r)
+
+        console.log(r.result=="ok")
+
+        if(r["result"]=="ok"){
+          this.busstopcodeformimage = r["busstopcode"]
+         
+          this.getbusses(r["busstopcode"])
+        }else{
+          this.oncameraclick()
+        }
+
+      }).catch(e=>{
+        console.log(e)
+      })
+     
+    });
+
   }
 }
