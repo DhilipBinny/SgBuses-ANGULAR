@@ -13,7 +13,8 @@ export class UtilService {
   constructor(readonly http: HttpClient) { }
 
   // url = "http://localhost:5000/"
-  url = "https://datamall-server.azurewebsites.net/"
+  // url = "https://datamall-server.azurewebsites.net/"
+  url ="https://sg-bus-backend.herokuapp.com/"
 
   getPosition(): Promise<any> {
     return new Promise((resolve, reject) => {
